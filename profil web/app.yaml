@@ -1,0 +1,12 @@
+runtime: python37
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: profil/index.html
+  upload: profil/index.html
+
+- url: /(.*)
+  static_files: profil/\1
+  upload: profil/(.*)
